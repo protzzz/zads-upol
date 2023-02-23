@@ -66,3 +66,6 @@ f["keys"][:f["top"]] = l
 
 print(search_sort(f,15))
 print(search_sort(f,3))
+
+print(binarni_search(f,15))
+print(binarni_search(f,3))

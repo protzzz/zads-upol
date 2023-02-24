@@ -28,12 +28,8 @@ f = open("ukol-1.txt", "rt", encoding="utf8")
 for radek in f:
     s = radek.split(";")
     num = []
-    #array_s0 = [{"key": int(s[0])}]
-    if num == {"key":int(s[0])}:
-        print(num)
-
-    #insert(array, {"key":int(s[0]), "data":s[1]})
+    insert(array, {"key":int(s[0]), "data":s[1]})
 
 
-#print("Rok371:"+ binarni_search(array,371))
-#print("Rok100:"+ binarni_search(array,100))
+print("Rok371:"+ binarni_search(array,371))
+print("Rok100:"+ binarni_search(array,100))

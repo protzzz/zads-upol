@@ -10,7 +10,7 @@ def empty(q):
     return q["head"] == q["tail"]
 
 def enqueue(x):
-
+    
     return
 
 def dequeue():

@@ -1,28 +1,19 @@
-def lenght(array):
-    return len(array)
-
-def init_queue(n):
-    k=[None for x in range(n)]
-    s={"data":k, "head":0, "tail":0}
-    return s
-
-def empty(q):
-    return q["head"] == q["tail"]
+seznam1 = []
+seznam2 = []
 
 def enqueue(x):
-    
-    return
+    seznam1.append(x)
 
 def dequeue():
+    if len(seznam1) == 0 and len(seznam2) == 0:
+        return None
+    elif len(seznam2) == 0:
+        while len(seznam1) > 0:
+            seznam2.append(seznam1.pop())
+    return seznam2.pop()
 
-    return
+for i in range(10):
+    enqueue(i)
 
-
-print(init_queue(10))
-# for i in range(10):
-#     enqueue(i)
-# for i in range(10):
-#     print(dequeue(),end=",")
-
-
-    
+for i in range(10):
+    print(dequeue(), end=",")
